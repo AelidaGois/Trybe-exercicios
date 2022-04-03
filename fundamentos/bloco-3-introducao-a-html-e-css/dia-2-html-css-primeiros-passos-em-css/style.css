@@ -1,0 +1,39 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-family:sans-serif;
+    width: 65px;
+    color: orange;
+    text-align:end
+}
+
+p {
+font-size: 3em;
+font-style: italic;
+line-height: 2;
+text-align: center;
+text-decoration:underline
+}
+
+
+.alterar-cor-p-e-ul {
+    background-color:rgb(180, 150, 49);
+    list-style: none;
+}
+
+li:nth-child(1n) {
+    background-color: rgb(243, 243, 101);
+    list-style: ;
+
+}
+li:nth-child(2n) {
+    background-color: red;
+}
+
+li:nth-child(3n) {
+    background-color: rgb(116, 101, 101);
+}
+
+
