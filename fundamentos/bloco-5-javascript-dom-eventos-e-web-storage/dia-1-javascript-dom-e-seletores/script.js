@@ -1,5 +1,17 @@
-document.getElementsByTagName("p")[0].innerHTML = "Daqui 2 anos me vejo uma pessoa trilhando na carreira de desenvolvedora web, inclusive atuante em alguma empresa buscando dar sempre o meu melhor para o meu crescimento pessoal e profissional.";
+let elementosH3 = document.querySelectorAll(".emergency-tasks div h3");
 
-document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
+for(let i = 0; i < elementosH3.length; i++){
+elementosH3[i].style.background = "purple";
+elementosH3[i].style.color = "white";
 
-document.getElementsByClassName(".main-content .center-content").style.backgroundColor = "white";
+}
+
+let elementosH = document.querySelectorAll(".no-emergency-tasks div h3");
+
+for(let j = 0; j < elementosH.length; j++){
+elementosH[j].style.background = "black";
+elementosH[j].style.color = "white";
+}
+
+let a = document.getElementsByClassName('agrupamento')[0].style.background = "rgb(255, 249, 249, 0.925)";
+
