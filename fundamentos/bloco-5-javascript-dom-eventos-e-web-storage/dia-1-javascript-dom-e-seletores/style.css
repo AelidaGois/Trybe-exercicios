@@ -30,12 +30,6 @@
   }
   
 
-.agrupamento {
-  align-items: center;
-}
-
-
-
   .emergency-tasks div {
     height: 198px;
    
@@ -53,6 +47,7 @@
     background-color: rgb(219, 219, 75);
     position: absolute;
     margin-top: 54px;
+    text-align: center;
   }
   
   .no-emergency-tasks div {
