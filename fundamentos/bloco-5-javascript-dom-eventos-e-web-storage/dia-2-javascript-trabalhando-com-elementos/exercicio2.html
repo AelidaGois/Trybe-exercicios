@@ -69,7 +69,7 @@
       criarElemento.innerText = ' Exercício 5.2 - JavaScript DOM';
 
       paiBody.appendChild(criarElemento);
-      
+
     } criarFilhoH1();
 
     // 2 - Adicione a tag main com a classe main-content como filho da tag body ;
@@ -98,11 +98,31 @@
 
     } criarFilhoSection();
 
-// 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+    // 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
+    function adicionarTagP() {
 
+      let paiSection = document.querySelector('section');
 
+      let adicioneTagP = document.createElement('p');
 
+      adicioneTagP.innerText = "Incluindo a tag p na section";
+      paiSection.appendChild(adicioneTagP);
+
+    } adicionarTagP();
+
+    // 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+    function criarSectionFilhoDeMain() {
+
+      let paiMain = document.querySelector('main');
+
+      let criarNovaSection = document.createElement('section');
+      criarNovaSection.className = "left-content";
+
+      paiMain.appendChild(criarNovaSection);
+
+    } criarSectionFilhoDeMain();
 
 
 
