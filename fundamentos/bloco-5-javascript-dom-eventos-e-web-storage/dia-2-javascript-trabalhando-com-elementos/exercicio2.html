@@ -162,14 +162,14 @@
       let listaNaoOrdenada = document.createElement('ul');
 
       listaNaoOrdenada.className = "lista-nao-ordenada";
-      
+
 
       for (let i = 1; i <= 10; i++) {
         let li = document.createElement('li');
-      listaNaoOrdenada.appendChild(li);
+        listaNaoOrdenada.appendChild(li);
       }
       paiSection.appendChild(listaNaoOrdenada);
-      
+
       document.querySelectorAll('.lista-nao-ordenada li')[0].innerText = 'UM'
       document.querySelectorAll('.lista-nao-ordenada li')[1].innerText = 'DOIS'
       document.querySelectorAll('.lista-nao-ordenada li')[2].innerText = 'TRÊS'
@@ -179,9 +179,15 @@
       document.querySelectorAll('.lista-nao-ordenada li')[6].innerText = 'SETE'
       document.querySelectorAll('.lista-nao-ordenada li')[7].innerText = 'OITO'
       document.querySelectorAll('.lista-nao-ordenada li')[8].innerText = 'NOVE'
-      document.querySelectorAll('.lista-nao-ordenada li')[9].innerText ='DEZ'
+      document.querySelectorAll('.lista-nao-ordenada li')[9].innerText = 'DEZ'
 
     } criarLista();
+
+    // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+
+
+
   </script>
 </body>
 
