@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: yellow;
+    }
+
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
+
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    // 1 -  Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+
+    function criarFilhoH1() {
+      let paiBody = document.querySelector('body');
+
+      let criarElemento = document.createElement('h1');
+
+      criarElemento.innerText = ' Exercício 5.2 - JavaScript DOM';
+
+      paiBody.appendChild(criarElemento);
+
+    } criarFilhoH1();
+
+    // 2 - Adicione a tag main com a classe main-content como filho da tag body ;
+
+    function criarFilhoMain() {
+
+      let paiBody = document.querySelector('body');
+
+      let mainFilho = document.createElement('main');
+
+      mainFilho.className = 'main-content';
+
+      paiBody.appendChild(mainFilho);
+
+    } criarFilhoMain();
+
+    //3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2; 
+    function criarFilhoSection() {
+      let paiMain = document.querySelector('.main-content');
+
+      let sectionFilho = document.createElement('section');
+
+      sectionFilho.className = 'center-content';
+
+      paiMain.appendChild(sectionFilho);
+
+    } criarFilhoSection();
+
+    // 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+
+    function adicionarTagP() {
+
+      let paiSection = document.querySelector('section');
+
+      let adicioneTagP = document.createElement('p');
+
+      adicioneTagP.innerText = "Incluindo a tag p na section";
+      paiSection.appendChild(adicioneTagP);
+
+    } adicionarTagP();
+
+    // 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+    function criarSectionFilhoDeMain() {
+
+      let paiMain = document.querySelector('main');
+
+      let criarNovaSection = document.createElement('section');
+      criarNovaSection.className = "left-content";
+
+      paiMain.appendChild(criarNovaSection);
+
+    } criarSectionFilhoDeMain();
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
