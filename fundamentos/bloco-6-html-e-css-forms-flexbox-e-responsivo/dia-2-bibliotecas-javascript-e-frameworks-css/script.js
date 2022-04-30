@@ -1,8 +1,19 @@
-let botoes = document.getElementById('buttons')
+let botaoEnviar = document.getElementById('enviar')
 
-botoes.addEventListener('click', function(event){
+botaoEnviar.addEventListener('click', function(event){
     event.preventDefault();
 });
 
 
+let imagens = document.getElementById("checkbox-2").value;
+imagens.addEventListener('click', function enviarImagens(){
+if(imagens.value === true){
+    
+    let novoInput = document.createElement('input');
+    novoInput.type = 'file';
+    novoInput.name = 'enviar-fotos';
+    novoInput.accept="image/png, image/jpeg";
+    novoInput.appendChild("checkbox-2");
+}
 
+} );
