@@ -12,10 +12,13 @@
 </head>
 
 <body>
-    <h1 class="text-center container bg-success shadow-lg p-3 mb-5 h1" id="titulo">TrybeTrip</h1>
+    <h1 class="text-center container shadow-lg p-3 mb-5 h1" id="titulo">TrybeTrip</h1>
     </header>
     <main class="container" id="box-principal">
-        <form class="shadow p-3 mb-5 bg-white rounded" action="" method="post" enctype="multipart/form-data" id='form'>
+        <form id='form'class="shadow p-3 mb-5 bg-white rounded" action="" method="post" enctype="multipart/form-data" id='form'>
+        <div>
+            
+        </div>
             <div>
                 <label class="form-label" for="preenche-nome">Nome:</label>
                 <input class="form-control" type="text" name="nome" id="preenche-nome" value="" minlength="10"
@@ -49,8 +52,8 @@
                         TrybeTrip?</p>
                 </label>
                 <div>
-                    <textarea name="message" id="pergunta" rows="10" cols="60" value="" maxlength="500"
-                        placeholder="Digite aqui sua super resposta">
+                    <textarea class="form-control text-left" name="message" id="pergunta" rows="10" cols="60" value="" maxlength="500"
+                        placeholder="Digite aqui sua resposta">
 
                             </textarea>
 
@@ -60,7 +63,7 @@
                     <label class="form-label" for="data-viagem">Qual a melhor data para realizar sua viagem?</label>
                     <div>
                         <label for="data-viagem">Data: </label>
-                        <input type="date" name="date" value="" id="data-viagem" placeholder="dd/mm/aaaa">
+                        <input type="date" name="date" id="data-viagem" placeholder="dd/mm/aaaa">
 
                     </div>
                     <div>
@@ -73,15 +76,17 @@
                                 <label for="checkbox-2">Concordo que imagens das minhas férias poderão ser usadas na
                                     divulgação de concursos futuros.</label>
                             </div>
+<div id="file-div">
 
+</div>
                         </div>
                     </div>
 
                 </div>
             </div>
             <div>
-                <button id="enviar" type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <button class ="btn btn-outline-success" id="enviar" type="submit">Enviar</button>
+                <button class="btn btn-outline-success" type="reset">Limpar</button>
 
 
             </div>

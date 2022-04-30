@@ -5,15 +5,20 @@ botaoEnviar.addEventListener('click', function(event){
 });
 
 
-let imagens = document.getElementById("checkbox-2").value;
-imagens.addEventListener('click', function enviarImagens(){
-if(imagens.value === true){
-    
-    let novoInput = document.createElement('input');
-    novoInput.type = 'file';
-    novoInput.name = 'enviar-fotos';
-    novoInput.accept="image/png, image/jpeg";
-    novoInput.appendChild("checkbox-2");
-}
+let imagens = document.getElementById("checkbox-2");
+imagens.addEventListener('change', enviarImagens);
 
-} );
+
+function enviarImagens(e){
+    console.log(e.target);
+    if(e.target.checked){
+   
+        let novoInput = document.createElement('input');
+        novoInput.type = 'file';
+        novoInput.name = 'enviar-fotos';
+        novoInput.accept="image/png, image/jpeg";
+        let fileDiv = document.getElementById('file-div');
+        fileDiv.appendChild(novoInput);
+        
+    }
+}

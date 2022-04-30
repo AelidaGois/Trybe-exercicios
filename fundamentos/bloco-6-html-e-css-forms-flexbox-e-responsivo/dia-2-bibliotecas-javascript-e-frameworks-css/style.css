@@ -1,8 +1,13 @@
 .container {
-    background-color: rgb(16, 145, 117);
+    background-color: rgb(18, 124, 101);
 }
 
 #titulo {
     color: white;
+    background-color:rgb(18, 124, 101);
     
+}
+
+#form {
+    background: url(./trybeTrip) no-repeat 98% 98%;
 }
