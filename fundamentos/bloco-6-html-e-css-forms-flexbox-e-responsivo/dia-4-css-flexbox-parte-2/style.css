@@ -3,82 +3,75 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu';
-  }
-  
-  body {
+}
+
+body {
     background-color: rgb(247, 247, 247);
-  }
-  
-  .header-container {
+}
+
+.header-container {
     background-color: #5C687C;
     display: flex;
+}
 
-  }
-
-
-
-  .logo-container {
+.logo-container {
     display: flex;
     justify-content: center;
     flex-basis: 268px;
-    /* border: 1px solid red; */
+}
 
-   
-  }
-
-
-  
-  .menu-container {
+.menu-container {
     display: flex;
     flex-basis: 500px;
-    /* border: 2px solid green; */
-    order:1;
+    order: 1;
     flex-grow: 1;
     align-self: center;
-  }
-  
-  .menu-container ul {
+}
+
+.menu-container ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
-  }
-  
-  .menu-container li {
+}
+
+.menu-container li {
     color: white;
     font-weight: 500;
     font-size: 1.3rem;
     list-style: none;
     margin-right: 10px;
-  }
+}
 
 
-  /* itens relacionados aos container's FILMES */
-  .main-container {
+/* itens relacionados aos container's FILMES */
+.main-container {
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid rgb(19, 68, 231);
-  }
-  
-  .movie-container {
+
+}
+
+.movie-container {
     display: flex;
     flex-direction: column;
-    border: 3px solid rgb(180, 38, 149);
-  }
-  
-  .movie-container h2 {
+    flex-basis: 700px;
+    flex-grow: 10;
+
+}
+
+.movie-container h2 {
     margin: 40px 0;
     text-align: center;
-   
-  }
-  
-  .card-container {
+
+}
+
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 3px solid red;
-  }
-  
-  .card-container div {
+
+}
+
+.card-container div {
     align-items: center;
     background-color: #5C687C;
     border: black solid 1px;
@@ -86,26 +79,27 @@
     height: 150px;
     justify-content: center;
     margin: 10px;
-    border: 3px solid green;
-  }
-  
-  .aside-container {
+    flex-basis: 16%;
+    flex-grow: 1;
+}
+
+.aside-container {
     display: flex;
     flex-direction: column;
     margin: 20px;
     flex-basis: 350px;
-   justify-content: center;
-   align-items: center;
-    border: 3px solid green;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
-  }
-  
-  .aside-container h3, h4 {
+}
+
+.aside-container h3,
+h4 {
     margin-bottom: 10px;
     text-align: center;
-  }
-  
-  .aside-container p {
+}
+
+.aside-container p {
     margin: 10px 0;
     text-align: justify;
-  }
+}
