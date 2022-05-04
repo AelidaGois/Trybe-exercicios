@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: rgb(247, 247, 247);
+    background-color: white;
+    
 }
 
 .header-container {
@@ -81,6 +82,7 @@ body {
     margin: 10px;
     flex-basis: 16%;
     flex-grow: 1;
+    border-radius: 10px;
 }
 
 .aside-container {
