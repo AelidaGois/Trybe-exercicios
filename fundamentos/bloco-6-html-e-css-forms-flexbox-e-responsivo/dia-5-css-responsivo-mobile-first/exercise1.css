@@ -2,79 +2,93 @@
  * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * apply a natural box layout model to all elements, but allowing components to change
  */
- html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
   font: 1.2em "Fira Sans", sans-serif;
-   padding-left: 30px;
-    margin-top: 40px; 
-  }
-  
-  article {
-font-size: 30px;
-  }
-  
-  h1 {
-font-size: 20px;
-  }
-  
-  h2 {
-  
-  }
-  
-  img {
-      max-width: 50%;
-      
-  }
-  
-  main {
+  padding-left: 30px;
+  margin-top: 40px;
+}
+
+article {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+
+}
+
+main {
   width: 100%;
- 
-  }
-  
-  section {
- 
- 
-  }
-  
-  figure {
-      margin: 0;
-      margin-bottom: 40px;
-      
-      
-      
-  }
-  
-  figcaption {
-    font-size: .8em;
+
+}
+
+section {}
+
+figure {
+  margin: 0;
+  margin-bottom: 40px;
+
+
+
+}
+
+figcaption {
+  font-size: .8em;
+  font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+  body {
+
+    background-color: rgb(183, 165, 185);
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    padding: 8px;
   }
 
-  @media screen and (min-width:600px){
-    body {
-      background-color: rgb(183, 165, 185);
-      font-size: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
-      text-align: justify;
-      padding: 8px;
-    }
-section {
-  display: flex;
-  width: 100%;
-  /* border: 3px solid red; */
-  flex-wrap: wrap;
-  
-}
-figure {
-  flex-basis: 50%;
-}
+  section {
+    display: flex;
+    width: 100%;
+    /* border: 3px solid red; */
+    flex-wrap: wrap;
+
+
   }
+
+  figure {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  figcaption {
+    font-size: .8em;
+    margin-top: 10px;
+  }
+}
 
 /* 1 - Faça o tamanho da fonte ser maior;
 2 - Faça o tamanho da fonte dos elementos h1 ser menor;
