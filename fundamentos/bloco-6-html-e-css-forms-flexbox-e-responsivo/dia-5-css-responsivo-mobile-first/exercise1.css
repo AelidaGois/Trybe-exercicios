@@ -43,6 +43,7 @@ text-align: justify;
   width: 1000px;
   flex-direction: column;
   flex-wrap: wrap;
+  align-content: space-around
   
 
 
