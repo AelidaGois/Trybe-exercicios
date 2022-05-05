@@ -11,17 +11,17 @@
   }
   
   body {
-    font-size: 30px;
-    margin-left: 50px;
-    margin-top: 40px;
+  font: 1.2em "Fira Sans", sans-serif;
+   padding-left: 30px;
+    margin-top: 40px; 
   }
   
   article {
-text-align: justify;
+font-size: 30px;
   }
   
   h1 {
-    font-size: 25px;
+font-size: 20px;
   }
   
   h2 {
@@ -30,6 +30,7 @@ text-align: justify;
   
   img {
       max-width: 50%;
+      
   }
   
   main {
@@ -38,22 +39,14 @@ text-align: justify;
   }
   
   section {
-    border: 1px solid red;
-  display: flex;
-  width: 1000px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around
-  
-
-
-  
-  
+ 
+ 
   }
   
   figure {
       margin: 0;
       margin-bottom: 40px;
+      
       
       
   }
@@ -62,14 +55,25 @@ text-align: justify;
     font-size: .8em;
   }
 
-  @media screen and (min-width:400px){
+  @media screen and (min-width:600px){
     body {
-      background-color: rgb(153, 145, 160);
+      background-color: rgb(183, 165, 185);
       font-size: 20px;
-      margin: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: justify;
+      padding: 8px;
     }
-
-
+section {
+  display: flex;
+  width: 100%;
+  /* border: 3px solid red; */
+  flex-wrap: wrap;
+  
+}
+figure {
+  flex-basis: 50%;
+}
   }
 
 /* 1 - Faça o tamanho da fonte ser maior;
